@@ -1,0 +1,37 @@
+Name: 'The HierText Dataset'
+Paper:
+  Title: Towards End-to-End Unified Scene Text Detection and Layout Analysis
+  URL: https://arxiv.org/pdf/2203.15143.pdf
+  Venue: ICDAR
+  Year: '2022'
+  BibTeX: '@inproceedings{long2022towards,
+  title={Towards End-to-End Unified Scene Text Detection and Layout Analysis},
+  author={Long, Shangbang and Qin, Siyang and Panteleev, Dmitry and Bissacco, Alessandro and Fujii, Yasuhisa and Raptis, Michalis},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2022}
+}
+
+@article{long2023icdar,
+  title={ICDAR 2023 Competition on Hierarchical Text Detection and Recognition},
+  author={Long, Shangbang and Qin, Siyang and Panteleev, Dmitry and Bissacco, Alessandro and Fujii, Yasuhisa and Raptis, Michalis},
+  journal={arXiv preprint arXiv:2305.09750},
+  year={2023}
+}'
+Data:
+  Website: https://rrc.cvc.uab.es/?ch=18
+  Language:
+    - English
+  Scene:
+    - Natural Scene
+  Granularity:
+    - Word
+    - Line
+    - Paragraph
+  Tasks:
+    - textdet
+    - textrecog
+    - textspotting
+  License:
+    Type: CC BY-SA 4.0
+    Link: https://creativecommons.org/licenses/by-sa/4.0/
+  Format: .jsonl
