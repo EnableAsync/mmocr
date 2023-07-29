@@ -16,11 +16,12 @@ train_preparer = dict(
             dict(
                 url='https://github.com/google-research-datasets'
                 '/hiertext/raw/main/gt/train.jsonl.gz',
-                save_name='hiertext_annotation.jsonl.tar.gz',
+                save_name='hiertext_annotation.jsonl.gz',
                 md5='681f8fa64ed1247d4ae0d68da00f6407',
                 content=['annotation'],
                 mapping=[[
-                    'hiertext_annotation/train.jsonl', 'annotations/train.json'
+                    'hiertext_annotation/hiertext_annotation.jsonl',
+                    'annotations/train.json'
                 ]],
             ),
         ],

@@ -167,6 +167,15 @@ class NaiveDataObtainer:
                     'Please install tarfile by running "pip install tarfile".')
             with tarfile.open(src_path, mode) as tar_ref:
                 tar_ref.extractall(dst_path)
+        elif src_path.endswith('.gz'):
+            import gzip
+            import shutil
+            dst_name = osp.join(
+                dst_path,
+                osp.basename(src_path).rsplit('.', maxsplit=1)[0])
+            with gzip.open(src_path, 'r') as gz_ref:
+                with open(dst_name, 'wb') as dst_file:
+                    shutil.copyfileobj(gz_ref, dst_file)
 
         open(osp.join(dst_path, '.finish'), 'w').close()
         if delete:
